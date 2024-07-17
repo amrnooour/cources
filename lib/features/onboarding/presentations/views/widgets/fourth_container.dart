@@ -8,11 +8,12 @@ class FourthContainer extends StatelessWidget {
   final String title;
   final PageController controller;
   final void Function()? onTapNext;
+  final void Function()? onTapSkip;
   const FourthContainer(
       {super.key,
       required this.height,
       required this.width,
-      required this.title, required this.controller,this.onTapNext});
+      required this.title, required this.controller,this.onTapNext, this.onTapSkip});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,9 @@ class FourthContainer extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text("Skip",style: TextStyle(color: Colors.grey),),
+                  GestureDetector(
+                    onTap: onTapSkip,
+                    child: const Text("Skip",style: TextStyle(color: Colors.grey),)),
                   SmoothPageIndicator(
                     effect:  WormEffect(
                       activeDotColor: Colors.white,

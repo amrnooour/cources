@@ -1,3 +1,4 @@
+import 'package:cources/core/functions/navigation.dart';
 import 'package:cources/features/onboarding/data/models/onboarding_model.dart';
 import 'package:cources/features/onboarding/presentations/views/widgets/fourth_container.dart';
 import 'package:cources/features/onboarding/presentations/views/widgets/third_container.dart';
@@ -36,7 +37,12 @@ class SecondOnboardingViewBody extends StatelessWidget {
                         duration: const Duration(milliseconds: 300),
                         curve: Curves.easeIn,
                       );
+                    } else if (nextPage == totalPages) {
+                      customNavigation(context, "/login");
                     }
+                  },
+                  onTapSkip: (){
+                    customNavigation(context, "/login");
                   },
                   height: height * .37,
                   width: width,

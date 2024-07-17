@@ -10,7 +10,5 @@ abstract class AppAssets {
   static const image1 = "assets/image1.png";
   static const image2 = "assets/image2.png";
   static const image3 = "assets/image3.png";
-
-
-
+  static const authLogo = "assets/auth_logo.png";
 }
