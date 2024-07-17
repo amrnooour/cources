@@ -7,8 +7,13 @@ class CustomTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final Widget? prefixIcon;
 
-  const CustomTextField({super.key, this.onChanged, this.controller,
-   this.hintText, this.suffixIcon, this.prefixIcon});
+  const CustomTextField(
+      {super.key,
+      this.onChanged,
+      this.controller,
+      this.hintText,
+      this.suffixIcon,
+      this.prefixIcon});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +22,9 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
         disabledBorder: buildBorder(),
-        hintText: hintText ,
-        hintStyle: const TextStyle(color: Colors.grey),
-        fillColor: Colors.white,
+        hintText: hintText,
+        hintStyle: TextStyle(color: Colors.grey.withOpacity(.5), fontSize: 14),
+        fillColor: const Color(0xffE4DFDF).withOpacity(.1),
         filled: true,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
@@ -32,6 +37,7 @@ class CustomTextField extends StatelessWidget {
 
   OutlineInputBorder buildBorder() {
     return OutlineInputBorder(
-        borderSide: BorderSide(color: Colors.grey.withOpacity(.1)),borderRadius: BorderRadius.circular(15));
+        borderSide: BorderSide(color: Colors.grey.withOpacity(.2)),
+        borderRadius: BorderRadius.circular(15));
   }
-  }
+}

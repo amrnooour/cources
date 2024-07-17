@@ -11,4 +11,11 @@ abstract class AppAssets {
   static const image2 = "assets/image2.png";
   static const image3 = "assets/image3.png";
   static const authLogo = "assets/auth_logo.png";
+  static const iconMessage = "assets/icon_message.png";
+  static const iconLock = "assets/icon_lock.png";
+  static const iconvisibilty = "assets/icon_visible.png";
+  static const iconProfile = "assets/Profile.png";
+
+
+
 }
