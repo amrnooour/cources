@@ -62,9 +62,14 @@ class SecondContainerRegister extends StatelessWidget {
             const SizedBox(
               height: 38,
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 35),
-              child: CustomButton(text: "SIGN UP"),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 35),
+              child: CustomButton(
+                text: "SIGN UP",
+                onTap: () {
+                  customNavigation(context, "/home");
+                },
+              ),
             ),
             const SizedBox(
               height: 23,

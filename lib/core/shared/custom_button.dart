@@ -1,10 +1,11 @@
 import 'package:cources/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 class CustomButton extends StatelessWidget {
   final String text;
-  const CustomButton({super.key, required this.text});
+  final void Function()? onTap;
+  const CustomButton({super.key, required this.text, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -30,12 +31,15 @@ class CustomButton extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              height: 25,
-              width: 25,
-              decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50))
-              ,color: Color(0xff3D56F0)),
-              child: const Icon(Icons.arrow_forward,color: Colors.white,size: 15,),
+            GestureDetector(
+              onTap: onTap,
+              child: Container(
+                height: 25,
+                width: 25,
+                decoration: const BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(50))
+                ,color: Color(0xff3D56F0)),
+                child: const Icon(Icons.arrow_forward,color: Colors.white,size: 15,),
+              ),
             )
           ],
         ),

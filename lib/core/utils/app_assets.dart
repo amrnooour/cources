@@ -15,6 +15,10 @@ abstract class AppAssets {
   static const iconLock = "assets/icon_lock.png";
   static const iconvisibilty = "assets/icon_visible.png";
   static const iconProfile = "assets/Profile.png";
+  static const profilePhoto = "assets/profile_photo.png";
+  static const bell = "assets/Vector.png";
+
+
 
 
 
