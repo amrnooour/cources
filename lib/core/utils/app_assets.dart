@@ -18,6 +18,16 @@ abstract class AppAssets {
   static const profilePhoto = "assets/profile_photo.png";
   static const bell = "assets/Vector.png";
 
+  static const homeIcom = "assets/home_icon.png";
+  static const homeIconSelected = "assets/home_icon_selected.png";
+  static const tab2 = "assets/tab2.png";
+  static const tab3 = "assets/tab3.png";
+  static const tab4 = "assets/tab4.png";
+  static const tab4Selected = "assets/tab4_selected.png";
+  static const tab5 = "assets/tab5.png";
+
+
+
 
 
 
