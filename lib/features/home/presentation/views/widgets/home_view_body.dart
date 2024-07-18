@@ -8,7 +8,7 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Column(children: [
-        CustomAppbar()
+        CustomAppbar(),
       ],),
     );
   }

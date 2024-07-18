@@ -1,9 +1,11 @@
 import 'package:cources/features/auth/login/presentation/views/login_view.dart';
 import 'package:cources/features/auth/register/presentation/views/register_view.dart';
+import 'package:cources/features/home/presentation/cubit/home_cubit.dart';
 import 'package:cources/features/home/presentation/views/home_view.dart';
 import 'package:cources/features/onboarding/presentations/views/onboarding_view.dart';
 import 'package:cources/features/onboarding/presentations/views/second_onboarding_view.dart';
 import 'package:cources/features/splash/splash_view.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter router = GoRouter(routes: [
@@ -12,7 +14,9 @@ final GoRouter router = GoRouter(routes: [
   GoRoute(path: "/onboardingTwo",builder: (context, state) => const SecondOnboardingView(),),
   GoRoute(path: "/login",builder: (context, state) => const LoginView(),),
   GoRoute(path: "/register",builder: (context, state) => const RegisterView(),),
-  GoRoute(path: "/home",builder: (context, state) => const HomeView(),),
+  GoRoute(path: "/home",builder: (context, state) => BlocProvider(
+    create: (context) => HomeCubit(),
+    child: const HomeView()),),
 
 
 

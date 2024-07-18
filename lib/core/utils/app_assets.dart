@@ -26,6 +26,10 @@ abstract class AppAssets {
   static const tab4Selected = "assets/tab4_selected.png";
   static const tab5 = "assets/tab5.png";
 
+  static const testImage = "assets/test_image.png";
+  static const playButton = "assets/Rounded.png";
+
+
 
 
 
