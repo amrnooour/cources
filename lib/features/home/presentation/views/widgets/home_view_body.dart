@@ -1,4 +1,5 @@
 import 'package:cources/features/home/presentation/views/widgets/custom_appbar.dart';
+import 'package:cources/features/home/presentation/views/widgets/custom_list_video.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -7,9 +8,12 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Column(children: [
-        CustomAppbar(),
-      ],),
+      child: Column(
+        children: [
+          CustomAppbar(),
+          CustomListVideo()
+        ],
+      ),
     );
   }
 }
