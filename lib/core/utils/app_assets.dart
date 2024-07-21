@@ -21,6 +21,8 @@ abstract class AppAssets {
   static const homeIcom = "assets/home_icon.png";
   static const homeIconSelected = "assets/home_icon_selected.png";
   static const tab2 = "assets/tab2.png";
+  static const tab2Selected = "assets/tab2_selected.png";
+
   static const tab3 = "assets/tab3.png";
   static const tab4 = "assets/tab4.png";
   static const tab4Selected = "assets/tab4_selected.png";
@@ -32,6 +34,10 @@ abstract class AppAssets {
   static const fieldImage = "assets/Medium_Traffic.png";
   static const tasksImage = "assets/tasks_image.png";
   static const calenderIcon = "assets/Vector5.png";
+
+  static const teacherImage = "assets/teacher_image.png";
+  static const bookIcon = "assets/book.png";
+
 
 
 

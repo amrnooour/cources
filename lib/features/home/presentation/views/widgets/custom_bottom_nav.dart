@@ -22,7 +22,7 @@ class CustomBottomNav extends StatelessWidget {
                    Image.asset(AppAssets.homeIcom),
                    context.read<HomeCubit>().currentIndex == 0),
               buildBottomNavItem(
-                   Image.asset(AppAssets.tab2),
+                   Image.asset(AppAssets.tab2Selected),
                    Image.asset(AppAssets.tab2),
                   context.read<HomeCubit>().currentIndex == 1),
               buildBottomNavItem(

@@ -1,8 +1,10 @@
 import 'package:cources/features/home/presentation/views/widgets/custom_appbar.dart';
+import 'package:cources/features/home/presentation/views/widgets/custom_grid_teacher.dart';
 import 'package:cources/features/home/presentation/views/widgets/custom_item_tasks.dart';
 import 'package:cources/features/home/presentation/views/widgets/custom_list_field.dart';
 import 'package:cources/features/home/presentation/views/widgets/custom_list_video.dart';
 import 'package:cources/features/home/presentation/views/widgets/custom_row_field.dart';
+import 'package:cources/features/home/presentation/views/widgets/custom_teacher_item.dart';
 import 'package:flutter/widgets.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -34,12 +36,19 @@ class HomeViewBody extends StatelessWidget {
               ),
               CustomRowField(title: "Tasks and exams"),
               SizedBox(
-                height: 45,
+                height: 27,
               ),
               CustomItemTasks(),
               SizedBox(height: 15,),
-              CustomItemTasks()
-
+              CustomItemTasks(),
+              SizedBox(
+                height: 45,
+              ),
+              CustomRowField(title: "Highlighted teachers"),
+              SizedBox(
+                height: 27,
+              ),
+              CustomGridTeacher(),
             ],
           ),
         ),
