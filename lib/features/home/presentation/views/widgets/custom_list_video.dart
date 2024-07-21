@@ -10,7 +10,7 @@ class CustomListVideo extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return SizedBox(
-      height: height*.4,
+      height: height*.32,
       width: width,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,

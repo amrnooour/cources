@@ -29,6 +29,13 @@ abstract class AppAssets {
   static const testImage = "assets/test_image.png";
   static const playButton = "assets/Rounded.png";
 
+  static const fieldImage = "assets/Medium_Traffic.png";
+  static const tasksImage = "assets/tasks_image.png";
+  static const calenderIcon = "assets/Vector5.png";
+
+
+
+
 
 
 
