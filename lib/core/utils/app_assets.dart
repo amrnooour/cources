@@ -38,6 +38,14 @@ abstract class AppAssets {
   static const teacherImage = "assets/teacher_image.png";
   static const bookIcon = "assets/book.png";
 
+  static const newestImage = "assets/newest_video.png";
+
+  static const imageContainer = "assets/image 77.png";
+  static const subIcon = "assets/sub_icon.png";
+
+
+
+
 
 
 

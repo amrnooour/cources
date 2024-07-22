@@ -29,9 +29,7 @@ class CustomVideoItem extends StatelessWidget {
                 ),
               ),
               Positioned(
-                  left: 125,
-                  top: 80,
-                  child: Image.asset(AppAssets.playButton)),
+                  left: 125, top: 80, child: Image.asset(AppAssets.playButton)),
               Positioned(
                 bottom: 0,
                 child: SizedBox(
@@ -41,7 +39,7 @@ class CustomVideoItem extends StatelessWidget {
                     value: progress,
                     valueColor:
                         const AlwaysStoppedAnimation<Color>(Colors.blue),
-                    backgroundColor: Colors.grey,
+                    backgroundColor: const Color(0xffDDDFDF),
                   ),
                 ),
               ),

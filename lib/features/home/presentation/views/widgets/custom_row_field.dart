@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 
 class CustomRowField extends StatelessWidget {
   final String title;
-  const CustomRowField({super.key, required this.title});
+  final void Function()? onTap;
+  const CustomRowField({super.key, required this.title, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +18,15 @@ class CustomRowField extends StatelessWidget {
         Spacer(),
         Padding(
           padding: EdgeInsets.only(right: 17),
-          child: Text(
-            "See All",
-            style: TextStyle(
-                fontSize: 14,
-                color: Color(0xff4318FF),
-                fontWeight: FontWeight.bold),
+          child: GestureDetector(
+            onTap: onTap,
+            child: Text(
+              "See All",
+              style: TextStyle(
+                  fontSize: 14,
+                  color: Color(0xff4318FF),
+                  fontWeight: FontWeight.bold),
+            ),
           ),
         )
       ],

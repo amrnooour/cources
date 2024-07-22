@@ -4,37 +4,52 @@ import 'package:cources/features/home/presentation/views/widgets/custom_number_c
 import 'package:flutter/widgets.dart';
 
 class CustomTeacherItem extends StatelessWidget {
-  const CustomTeacherItem({super.key});
+  final void Function()? onTap;
+  const CustomTeacherItem({super.key, this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          height: 116,
-          width: 150,
-          decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(15)),
-              image: DecorationImage(
-                  image: AssetImage(AppAssets.teacherImage),
-                  fit: BoxFit.cover)),
-           child: const Padding(
-             padding: EdgeInsets.all(8.0),
-             child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-              CustomNumberCources(),
-             ],),
-           ),
+        GestureDetector(
+          onTap: onTap,
+          child: Container(
+            height: 116,
+            width: 150,
+            decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(15)),
+                image: DecorationImage(
+                    image: AssetImage(AppAssets.teacherImage),
+                    fit: BoxFit.cover)),
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomNumberCources(),
+                ],
+              ),
+            ),
+          ),
         ),
-        const SizedBox(height: 13,),
-        const Row(children: [
-          Text("Mohamed samir  ",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
-          CustomContainerPrice(),
-        ],),
-        const Text("UX Researcher",style: TextStyle(fontSize: 14,color: Color(0xffA3AED0)),)
+        const SizedBox(
+          height: 13,
+        ),
+        const Row(
+          children: [
+            Text(
+              "Mohamed samir  ",
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            ),
+            CustomContainerPrice(),
+          ],
+        ),
+        const Text(
+          "UX Researcher",
+          style: TextStyle(fontSize: 14, color: Color(0xffA3AED0)),
+        ),
       ],
     );
   }

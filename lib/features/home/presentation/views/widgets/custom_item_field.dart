@@ -7,7 +7,8 @@ class CustomItemField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Image.asset(AppAssets.fieldImage),
+      Image.asset(
+        AppAssets.fieldImage),
       const Text("Design")
     ],);
   }
